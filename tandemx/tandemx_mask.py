@@ -4,6 +4,13 @@
 This library is just a functionized copy of David's tandemx_mask.py script
 All credits to https://github.com/dshean/tandemx/blob/master/tandemx_mask.py
 """
+import sys
+import os
+import glob
+from pygeotools.lib import iolib
+import numpy as np
+import scipy.ndimage as ndimage
+
 
 def mask_tandemx(tiledir,return_fn=True):
     """
